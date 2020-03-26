@@ -1,0 +1,17 @@
+git pull - скачивание с репозитория последних данных
+
+git status -- статус
+git add . -- добавить все изменения к предстоящему коммиту
+git commit -m "comment" -- сделать коммит
+git push origin -- отправить на сервер
+
+Работа с ветками:
+git checkout -b %branch_name% -- создать ветку с %branch_name%. перед этим лучше сделать git pull
+git push origin %branch_name% -- запушить ветку на сервер
+git checkout master -- вернуться на ветку master
+
+Слияние веток:
+# находимся в %branch_name%
+git checkout master
+git pull
+git merge %branch_name%
